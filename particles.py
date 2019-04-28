@@ -1,7 +1,7 @@
 #!python3
 
 import os
-
+import numpy as np
 # this file defines all the relevant objects that will be used
 
 def createFolder(foldername):
@@ -24,5 +24,6 @@ class Dot:
 		self.zero = self.pos
 		self.mass = mass
 		self.timer = 0
+		self.hist =	np.array([self.pos])
 # makeVideo(badWave,'images',50,"output")
 
